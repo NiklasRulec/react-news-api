@@ -67,7 +67,7 @@ const NewsSection = () => {
       <h1>Articles</h1>
       {news ? (
         <section className="news-section">
-          {news.articles.map((elm, index) => (
+          {news?.articles.map((elm, index) => (
             <article key={index} className="news-card">
               <h2>{elm.title}</h2>
               {/* <img src={elm.urlToImage} alt="img" /> */}
