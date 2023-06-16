@@ -14,7 +14,6 @@ const NewsSection = () => {
       .then((response) => response.json())
       .then((news) => {
         setNews(news);
-        console.log(news);
       })
       .catch((error) => {
         console.log("Fehler beim Laden", error);
